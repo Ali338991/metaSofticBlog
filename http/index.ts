@@ -6,7 +6,7 @@ const api = axios.create({
         Authorization: `Bearer ${process.env.BACKEND_API_KEY}`,
     },
 });
-
+export const baseURL = 'https://meta-softic-blog-management.onrender.com';
 // Categories
 export const fetchCategories = async () => api.get('/api/categories');
 
