@@ -36,6 +36,7 @@ const slug = ({ article, notFound = false }: IPropType) => {
                                 src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                                 height={40}
                                 width={40}
+                                alt='avatar'
                             />
                         </div>
                         <span className="text-sm font-bold text-gray-600">
@@ -51,7 +52,7 @@ const slug = ({ article, notFound = false }: IPropType) => {
                         </span>
                     </div>
                     <div className="text-lg text-gray-600 leading-8">
-                        <img
+                        <Image
                             className="w-full my-12 mb-6"
                             src={`http://localhost:1337${article.attributes.Image.data.attributes.url}`}
                             alt={article.attributes.Title}
