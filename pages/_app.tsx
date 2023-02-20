@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <div className="container mx-auto font-sans">
                 <NextNProgress color="blue" />
                 <Navbar />
-                <main className="pb-32">
+                <main className="pb-32 p-5">
                     <Component {...pageProps} />
                 </main>
                 <Footer />
